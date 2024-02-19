@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--This declaration specifies the document type and version of HTML being used.-->
+<html lang="en">
+<!--This tag defines the beginning of the HTML document, with the specified language set to English (en).-->
+
+
+
+<!--This section contains meta-information about the HTML document, such as character encoding, viewport settings, and the document title.-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--Sets the character encoding of the document to UTF-8.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Configures the viewport for mobile devices to render the page with the same width as the device's screen width, and sets the initial zoom level to 1.0.-->
+    <title>Calculator</title>
+    <!--Sets the title of the HTML document to "Calculator".-->
+    <link rel="stylesheet" href="calculator.css">
+    <!-- Links an external CSS file (calculator.css) to style the HTML content.-->
+</head>
+
+
+<!--This section contains the visible content of the HTML document.-->
+
+<body>
+
+    <div class="calculator">
+
+        <!--contains the calculator interface.-->
+        <div class="display" id="display">0</div>
+        <!--serves as the display area of the calculator, initially displaying "0".-->
+
+        <!--Buttons for various operations and numbers:-->
+        <button class="btn" onclick="clearDisplay()">AC</button>
+        <button class="btn" onclick="appendValue('%')">%</button>
+        <button class="btn" onclick="appendValue('**2')">x<sup>2</sup></button>
+        <button class="btn" onclick="appendValue('/')">/</button>
+        <button class="btn" onclick="appendValue('7')">7</button>
+        <button class="btn" onclick="appendValue('8')">8</button>
+        <button class="btn" onclick="appendValue('9')">9</button>
+        <button class="btn" onclick="appendValue('*')">*</button>
+        <button class="btn" onclick="appendValue('4')">4</button>
+        <button class="btn" onclick="appendValue('5')">5</button>
+        <button class="btn" onclick="appendValue('6')">6</button>
+        <button class="btn" onclick="appendValue('-')">-</button>
+        <button class="btn" onclick="appendValue('1')">1</button>
+        <button class="btn" onclick="appendValue('2')">2</button>
+        <button class="btn" onclick="appendValue('3')">3</button>
+        <button class="btn" onclick="appendValue('+')">+</button>
+        <button class="btn" onclick="appendValue('0')">0</button>
+        <button class="btn" onclick="appendValue('.')">.</button>
+        <button class="btn equal-btn" onclick="calculate()">=</button>
+    </div>
+    <script src="calculator.js"></script>
+    <!--Links an external JavaScript file (calculator.js) containing the logic for the calculator.-->
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+/*These styles apply to the entire body of the HTML document.*/
+
+body {
+    font-family: Arial, sans-serif;
+    /*Sets the font family for all text content in the body to Arial or a generic sans-serif font if Arial is not available.*/
+    background-color: darkslategray;
+    /*Sets the background color of the body to darkslategray.*/
+    display: flex;
+    /* Configures the body to use flexbox layout. */
+    justify-content: center;
+    /*Centers the content horizontally within the body.*/
+    align-items: center;
+    /*Centers the content vertically within the body.*/
+    height: 100vh;
+    /*Sets the height of the body to 100% of the viewport height.*/
+    margin: 0;
+    /*Removes any default margin applied to the body.*/
+    color: whitesmoke;
+    /*Sets the default text color to whitesmoke.*/
+    text-shadow: 2px 2px grey;
+    /*Adds a shadow effect to the text, offsetting it by 2 pixels horizontally and 2 pixels vertically, with a grey color.*/
+}
+
+
+/*These styles apply to elements with the class "calculator".*/
+
+.calculator {
+    background-color: black;
+    /*Sets the background color of the calculator to black.*/
+    border-radius: 20px;
+    /*Applies a border radius of 20 pixels to create rounded corners for the calculator.*/
+    border: 7px solid dimgrey;
+    /*Adds a solid border with a width of 7 pixels and a color of dimgrey.*/
+    padding: 20px;
+    /*Adds internal padding of 20 pixels to create space between the content and the edges of the calculator.*/
+    display: grid;
+    /*Configures the calculator to use CSS Grid layout.*/
+    grid-template-columns: repeat(4, 1fr);
+    /*Specifies the grid layout to have 4 columns of equal width, filling the available space.*/
+    grid-gap: 10px;
+    /*Sets the gap between grid items to 10 pixels.*/
+    max-width: 400px;
+    /*Sets the maximum width of the calculator to 400 pixels.*/
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1.0), 0 6px 20px 0 rgba(0, 0, 0, 1.0);
+    /*Adds a box shadow effect to the calculator, consisting of two shadows: one above and one below the calculator.*/
+}
+
+
+/*These styles apply to elements with the class "display".*/
+
+.display {
+    grid-column: span 4;
+    /*Spans the display element across 4 columns in the grid layout.*/
+    text-align: right;
+    /*Aligns the text content to the right within the display element.*/
+    padding: 30px;
+    /*Adds internal padding of 30 pixels to create space between the text and the edges of the display element.*/
+    font-size: 1.5rem;
+    /*Sets the font size of the text content to 1.5 times the default font size.*/
+}
+
+
+/*These styles apply to elements with the class "btn", which are buttons in the calculator.*/
+
+.btn {
+    padding: 10px;
+    /*Adds internal padding of 10 pixels to create space between the text and the edges of the buttons.*/
+    font-size: 1.2rem;
+    /*Sets the font size of the text content to 1.2 times the default font size.*/
+    background-color: darkgreen;
+    /*Sets the background color of the buttons to darkgreen.*/
+    border: 2px solid grey;
+    /*Adds a solid border with a width of 2 pixels and a color of grey around the buttons.*/
+    border-radius: 15px;
+    /*Applies a border radius of 15 pixels to create rounded corners for the buttons.*/
+    cursor: pointer;
+    /*Changes the cursor to a pointer when hovering over the buttons.*/
+    color: whitesmoke;
+    /*Sets the text color of the buttons to whitesmoke.*/
+    text-shadow: 2px 3px black;
+    /*Adds a shadow effect to the text of the buttons, offsetting it by 2 pixels horizontally and 3 pixels vertically, with a black color.*/
+}
+
+
+/*These styles apply to elements with the class "equal-btn".*/
+
+.equal-btn {
+    grid-column: span 2;
+    /*Spans the equal button across 2 columns in the grid layout.*/
+}
